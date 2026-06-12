@@ -1,0 +1,4 @@
+name: firewall
+description: Topic skill for traffic filtering, zone policy and exposure control.
+metadata:
+  default_prompt: "Use $firewall to explain traffic filtering, OpenWrt firewall role and secure exposure of VPN panels, APIs and proxies."

@@ -1,0 +1,4 @@
+name: load-balancing
+description: Topic skill for load balancing, upstream distribution and failover behavior.
+metadata:
+  default_prompt: "Use $load-balancing to explain traffic distribution, upstream groups, failover and the difference between balancing and anycast."

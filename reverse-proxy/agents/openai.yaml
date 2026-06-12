@@ -1,0 +1,4 @@
+name: reverse-proxy
+description: Topic skill for reverse proxy, upstream routing and secure service publication.
+metadata:
+  default_prompt: "Use $reverse-proxy to explain reverse proxy behavior, upstream routing and panel publication behind NGINX or Nginx Proxy Manager."

@@ -1,0 +1,4 @@
+name: nat
+description: Topic skill for NAT, PAT and address translation troubleshooting.
+metadata:
+  default_prompt: "Use $nat to explain address translation, inbound publishing limits and NAT-related network behavior."

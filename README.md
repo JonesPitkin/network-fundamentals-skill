@@ -1,46 +1,118 @@
-# network-fundamentals
+# network-fundamentals-skill
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Status: Ready for Publication](https://img.shields.io/badge/status-ready%20for%20publication-2ea44f)
+![Status: Publish Ready](https://img.shields.io/badge/status-publish--ready-2ea44f)
 
-`network-fundamentals` — фундаментальный сетевой skill и справочник для Codex на русском языке. Пакет предназначен для объяснения базовых сетевых концепций, диагностики реальных проблем в Linux и OpenWrt, а также для использования как долговременная база знаний по адресации, маршрутизации, транспорту и сетевой эксплуатации.
+`network-fundamentals-skill` — standalone Codex skill-репозиторий с фундаментальной базой знаний по компьютерным сетям на русском языке. Репозиторий нужен как общий сетевой entrypoint для объяснения теории, пошаговой диагностики и повседневной эксплуатации Linux, OpenWrt и VPN-инфраструктуры.
 
-## Project Overview
+## Описание проекта
 
-Этот skill покрывает:
+Репозиторий покрывает:
 
-- модель OSI и практическое разложение проблем по слоям;
-- реальный стек TCP/IP;
-- TCP, UDP и различия между ними;
-- MTU, MSS, PMTUD и проблемы фрагментации;
-- NAT, PAT и CGNAT;
-- маршрутизацию и шлюз по умолчанию;
-- DNS, recursive resolver и authoritative DNS;
-- IPv4, IPv6 и сетевые порты.
+- модель `OSI` и диагностическое разложение проблем по слоям;
+- практический стек `TCP/IP`;
+- `TCP`, `UDP` и транспортное поведение;
+- `DNS`, типы resolver/server roles и типовые инциденты;
+- `ports`, sockets и transport demultiplexing;
+- `NAT`, `PAT` и `CGNAT`;
+- `MTU`, `MSS`, `PMTUD` и фрагментацию;
+- `gateway`, `routing`, `IPv4` и `IPv6`;
+- `TLS`, `HTTPS`, `CDN`, `reverse proxy`, `firewall` и `linux networking` как базовый слой для VPN-публикации, edge-защиты и web-facing control plane.
+- `anycast`, `BGP`, `DNS security`, `mTLS`, `HTTP/2`, `HTTP/3`, `QUIC` и `load balancing` как следующий фундамент для Cloudflare, Nginx Proxy Manager, OpenWrt и современных VPN-репозиториев.
 
-## Repository Map
+## Quick Start
+
+1. Начать с [SKILL.md](./SKILL.md) как с главного repository entrypoint.
+2. Если проблема еще не локализована, перейти в [osi-model/SKILL.md](./osi-model/SKILL.md).
+3. Если вопрос про реальную сетевую механику, затем открыть [tcp-ip/SKILL.md](./tcp-ip/SKILL.md).
+4. Для адресации, маршрута и выхода в Интернет использовать `ipv4`, `ipv6`, `routing`, `gateway`.
+5. Для приложений и отказов поверх IP использовать `dns`, `tcp-vs-udp`, `ports`, `nat`, `cgnat`, `mtu`.
+6. Для безопасной публикации сервисов и панелей использовать `tls`, `https`, `cdn`, `reverse-proxy`, `firewall`, `linux-networking`.
+7. Для edge-маршрутизации, secure DNS, modern web transport и high-availability publication использовать `anycast`, `bgp`, `dns-security`, `mtls`, `http2-http3`, `load-balancing`.
+
+## Карта разделов
 
 | Раздел | Назначение |
 | --- | --- |
-| [SKILL.md](./SKILL.md) | Корневой entrypoint skill для Codex |
-| [README.md](./README.md) | Обзор проекта, структура и источники |
-| [AUDIT.md](./AUDIT.md) | История внесенных улучшений после аудита |
-| [QUALITY_REPORT.md](./QUALITY_REPORT.md) | Финальная оценка качества разделов |
-| [references/sources.md](./references/sources.md) | Канонический список источников и RFC |
-| [osi-model/](./osi-model/) | Диагностика и объяснение по модели OSI |
-| [tcp-ip/](./tcp-ip/) | Практический Internet protocol suite |
-| [tcp-vs-udp/](./tcp-vs-udp/) | TCP, UDP и транспортное поведение |
-| [mtu/](./mtu/) | MTU, MSS, PMTUD |
-| [nat/](./nat/) | NAT, PAT, SNAT, DNAT |
-| [cgnat/](./cgnat/) | Carrier-Grade NAT |
-| [routing/](./routing/) | Статическая и динамическая маршрутизация |
-| [gateway/](./gateway/) | Шлюз по умолчанию и next hop |
-| [dns/](./dns/) | DNS и серверные роли |
-| [ipv4/](./ipv4/) | Адресация IPv4 |
-| [ipv6/](./ipv6/) | Адресация IPv6 |
-| [ports/](./ports/) | Сетевые порты и сокеты |
+| [SKILL.md](./SKILL.md) | Главный entrypoint и роутер по сетевым темам |
+| [SKILL_INDEX.md](./SKILL_INDEX.md) | Полный список skills и их ролей |
+| [VERSION_MATRIX.md](./VERSION_MATRIX.md) | Матрица версий, стандартов и совместимости |
+| [CHANGELOG.md](./CHANGELOG.md) | История publish-ready изменений |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Правила внесения изменений |
+| [RELEASE_v1.0.0.md](./RELEASE_v1.0.0.md) | Описание первого publish-ready релиза |
+| [references/](./references/) | Корневые reference-материалы по репозиторию |
+| [osi-model/](./osi-model/) | Диагностика по слоям |
+| [tcp-ip/](./tcp-ip/) | Реальная интернет-стековая модель |
+| [tcp-vs-udp/](./tcp-vs-udp/) | Сравнение транспортов |
+| [dns/](./dns/) | Разрешение имен и DNS-диагностика |
+| [ports/](./ports/) | Порты, сокеты и listen/connect behavior |
+| [nat/](./nat/) | Address translation и service publishing |
+| [cgnat/](./cgnat/) | Операторский NAT и его ограничения |
+| [mtu/](./mtu/) | Размер пакета, MSS и PMTUD |
+| [gateway/](./gateway/) | Default gateway и next hop |
+| [routing/](./routing/) | Выбор пути и route lookup |
+| [ipv4/](./ipv4/) | IPv4 адресация и private/public ranges |
+| [ipv6/](./ipv6/) | IPv6 адресация, NDP, SLAAC и PMTUD |
+| [tls/](./tls/) | TLS, сертификаты и secure transport |
+| [https/](./https/) | HTTPS, redirects и безопасная web-публикация |
+| [cdn/](./cdn/) | CDN, edge cache, latency и reliability |
+| [reverse-proxy/](./reverse-proxy/) | Reverse proxy, upstream и публикация приложений |
+| [firewall/](./firewall/) | Firewall policy, exposure control и OpenWrt firewall |
+| [linux-networking/](./linux-networking/) | Linux interfaces, routes, listeners и host-side network diagnostics |
+| [anycast/](./anycast/) | Anycast routing, DNS edge и Cloudflare delivery model |
+| [bgp/](./bgp/) | BGP и интернет-маршрутизация между автономными системами |
+| [dns-security/](./dns-security/) | DNSSEC, DoH, DoT и secure DNS |
+| [mtls/](./mtls/) | Mutual TLS и двусторонняя аутентификация |
+| [http2-http3/](./http2-http3/) | HTTP/2, HTTP/3 и QUIC |
+| [load-balancing/](./load-balancing/) | Балансировка нагрузки и отказоустойчивость |
 
-## Recommended Reading Order
+## Структура проекта
+
+```text
+network-fundamentals-skill/
+├── README.md
+├── SKILL.md
+├── SKILL_INDEX.md
+├── VERSION_MATRIX.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── RELEASE_v1.0.0.md
+├── LICENSE
+├── AUDIT.md
+├── QUALITY_REPORT.md
+├── agents/
+│   └── openai.yaml
+├── references/
+│   ├── sources.md
+│   ├── repository-map.md
+│   └── standalone-compatibility.md
+├── osi-model/
+├── tcp-ip/
+├── tcp-vs-udp/
+├── dns/
+├── ports/
+├── nat/
+├── cgnat/
+├── mtu/
+├── gateway/
+├── routing/
+├── ipv4/
+├── ipv6/
+├── tls/
+├── https/
+├── cdn/
+├── reverse-proxy/
+├── firewall/
+├── linux-networking/
+├── anycast/
+├── bgp/
+├── dns-security/
+├── mtls/
+├── http2-http3/
+└── load-balancing/
+```
+
+## Порядок изучения
 
 1. [osi-model](./osi-model/SKILL.md)
 2. [tcp-ip](./tcp-ip/SKILL.md)
@@ -54,67 +126,53 @@
 10. [nat](./nat/SKILL.md)
 11. [cgnat](./cgnat/SKILL.md)
 12. [mtu](./mtu/SKILL.md)
+13. [linux-networking](./linux-networking/SKILL.md)
+14. [firewall](./firewall/SKILL.md)
+15. [tls](./tls/SKILL.md)
+16. [https](./https/SKILL.md)
+17. [reverse-proxy](./reverse-proxy/SKILL.md)
+18. [cdn](./cdn/SKILL.md)
+19. [anycast](./anycast/SKILL.md)
+20. [bgp](./bgp/SKILL.md)
+21. [dns-security](./dns-security/SKILL.md)
+22. [mtls](./mtls/SKILL.md)
+23. [http2-http3](./http2-http3/SKILL.md)
+24. [load-balancing](./load-balancing/SKILL.md)
 
-## Topic Map
+## Источники
 
-```text
-OSI
-  -> задает диагностическую модель
-  -> ведет к TCP/IP как к реальной реализации
+Основные источники знаний:
 
-TCP/IP
-  -> использует IPv4 и IPv6
-  -> использует TCP и UDP
+- `RFC Editor`
+- `Cloudflare Learning Center`
+- `Cisco Networking Academy`
+- `OpenWrt Networking Docs`
+- `MDN Networking`
 
-IPv4
-  -> тесно связан с NAT и дефицитом адресов
+Полный список ссылок: [references/sources.md](./references/sources.md)
 
-IPv6
-  -> опирается на ICMPv6, NDP, SLAAC и PMTUD
+## Связанные репозитории
 
-Routing + Gateway
-  -> определяют выбор пути и выход за пределы локальной подсети
+- [sing-box-skills](https://github.com/JonesPitkin/sing-box-skills) — standalone skill-репозиторий по `sing-box`.
+- [3x-ui-skills](https://github.com/JonesPitkin/3x-ui-skills) — standalone skill-репозиторий по `3x-ui`.
+- [remnawave-skills](https://github.com/JonesPitkin/remnawave-skills) — standalone skill-репозиторий по `Remnawave`.
+- [nidox-vpn-skills](https://github.com/JonesPitkin/nidox-vpn-skills) — мета-репозиторий VPN skills, где используется этот фундаментальный модуль.
 
-DNS
-  -> зависит от IP-связности, маршрута и транспорта
+## Совместимость
 
-Ports + TCP/UDP
-  -> определяют доставку данных приложению
+Репозиторий приведен к тому же publish-ready шаблону, что и другие standalone skill-репозитории семейства NIDOX Skills:
 
-MTU/MSS
-  -> влияют на стабильность передачи и туннели
-```
+- корневой `SKILL.md` выступает как главный entrypoint;
+- присутствует `agents/openai.yaml`;
+- добавлены `SKILL_INDEX.md`, `VERSION_MATRIX.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `RELEASE_v1.0.0.md`;
+- существующая база знаний, разделы и reference-файлы сохранены без удаления;
+- добавлены новые базовые разделы для VPN, OpenWrt, Cloudflare, sing-box, Podkop, 3x-ui, Remnawave и Nginx Proxy Manager.
 
-## Sources
+## Аудит и качество
 
-Основные авторитетные источники:
-
-- Cloudflare Learning Center
-- Cisco Networking Academy
-- OpenWrt Networking Docs
-- MDN Networking
-- RFC Editor
-
-Полный список ссылок и RFC: [references/sources.md](./references/sources.md)
-
-## Quality Report
-
-Финальный аудит качества и оценки разделов доступны в [QUALITY_REPORT.md](./QUALITY_REPORT.md).
-
-Ключевые результаты:
-
-- структура пакета целостна;
-- все тематические разделы содержат `SKILL.md`, `references.md`, `glossary.md`, `examples.md`;
-- во всех `references.md` есть `Common Mistakes` и `Troubleshooting`;
-- RFC привязаны к темам корректно;
-- команды Linux/OpenWrt и диагностические сценарии приведены к единому operational-формату.
-
-## Audit History
-
-История углубленного аудита и список внесенных улучшений зафиксированы в [AUDIT.md](./AUDIT.md).
+- история улучшений: [AUDIT.md](./AUDIT.md)
+- итоговая оценка качества: [QUALITY_REPORT.md](./QUALITY_REPORT.md)
 
 ## License
 
-Проект лицензирован по лицензии MIT. Материалы можно свободно использовать, изменять и распространять в соответствии с условиями лицензии MIT.
-
-Полный текст лицензии: [LICENSE](./LICENSE)
+Проект лицензирован по лицензии MIT. Полный текст: [LICENSE](./LICENSE)

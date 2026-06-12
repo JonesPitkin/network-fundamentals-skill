@@ -1,0 +1,4 @@
+name: mtls
+description: Topic skill for mutual TLS, client certificates and bidirectional authentication.
+metadata:
+  default_prompt: "Use $mtls to explain mutual TLS, client certificate trust and the difference between ordinary TLS and two-way authentication."

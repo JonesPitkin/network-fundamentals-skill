@@ -1,0 +1,4 @@
+name: ipv6
+description: Topic skill for IPv6 addressing, NDP, SLAAC, ICMPv6 and IPv6 troubleshooting.
+metadata:
+  default_prompt: "Use $ipv6 to explain IPv6 addressing, neighbor discovery, SLAAC and IPv6-specific failure modes."

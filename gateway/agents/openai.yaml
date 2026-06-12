@@ -1,0 +1,4 @@
+name: gateway
+description: Topic skill for default gateway, next hop and local-vs-remote path selection.
+metadata:
+  default_prompt: "Use $gateway to explain default gateway logic and diagnose missing off-subnet reachability."

@@ -1,0 +1,4 @@
+name: cdn
+description: Topic skill for CDN, edge caching, origin shielding and edge delivery behavior.
+metadata:
+  default_prompt: "Use $cdn to explain edge delivery, caching, origin-vs-edge troubleshooting and CDN-backed publication."

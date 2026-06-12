@@ -1,0 +1,4 @@
+name: tcp-ip
+description: Topic skill for the practical TCP/IP stack, encapsulation and connectivity reasoning.
+metadata:
+  default_prompt: "Use $tcp-ip to explain the real Internet stack, encapsulation and the path from application to link."

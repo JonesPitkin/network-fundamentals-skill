@@ -1,0 +1,4 @@
+name: anycast
+description: Topic skill for anycast routing, edge selection and anycast-backed DNS or delivery behavior.
+metadata:
+  default_prompt: "Use $anycast to explain how one address can be announced from many locations and how that affects DNS, CDN and edge delivery."

@@ -1,0 +1,4 @@
+name: dns-security
+description: Topic skill for DNSSEC, DoH, DoT and secure DNS behavior.
+metadata:
+  default_prompt: "Use $dns-security to explain DNSSEC, DoH, DoT, secure DNS design and resolver-side privacy or integrity issues."

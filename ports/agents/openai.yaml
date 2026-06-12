@@ -1,0 +1,4 @@
+name: ports
+description: Topic skill for ports, sockets and transport endpoint diagnostics.
+metadata:
+  default_prompt: "Use $ports to explain network ports, sockets, listener state and firewall or NAT interactions."

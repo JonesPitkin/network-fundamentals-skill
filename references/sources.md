@@ -35,6 +35,54 @@
 - How does the Internet work?: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work>
 - Web mechanics: <https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics>
 - Internet glossary: <https://developer.mozilla.org/en-US/docs/Glossary/Internet>
+- TLS: <https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security>
+- HTTPS: <https://developer.mozilla.org/en-US/docs/Glossary/HTTPS>
+
+## 4a. Cloudflare Learning Center: TLS and CDN
+
+- CDN: <https://www.cloudflare.com/learning/cdn/what-is-a-cdn/>
+- TLS: <https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/>
+
+## 4b. NGINX Documentation
+
+- Reverse proxy: <https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/>
+- nginx docs index: <https://nginx.org/en/docs/>
+
+## 4c. OpenWrt Firewall Docs
+
+- Firewall configuration: <https://openwrt.org/docs/guide-user/firewall/firewall_configuration>
+- Firewall overview: <https://openwrt.org/docs/guide-user/firewall/overview>
+
+## 4d. Additional Cloudflare Learning Center
+
+- Anycast: <https://www.cloudflare.com/learning/cdn/glossary/anycast-network/>
+- Anycast DNS: <https://www.cloudflare.com/learning/dns/what-is-anycast-dns/>
+- DNS security: <https://www.cloudflare.com/learning/dns/dns-security/>
+- DoH vs DoT: <https://www.cloudflare.com/learning/dns/dns-over-tls/>
+
+## 4e. Additional MDN
+
+- HTTP/2: <https://developer.mozilla.org/en-US/docs/Glossary/HTTP_2>
+- HTTP/3: <https://developer.mozilla.org/en-US/docs/Glossary/HTTP_3>
+- QUIC: <https://developer.mozilla.org/en-US/docs/Glossary/QUIC>
+- Evolution of HTTP: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP>
+
+## 4f. Additional NGINX Docs
+
+- HTTP load balancing: <https://nginx.org/en/docs/http/load_balancing.html>
+- Upstream module: <https://nginx.org/en/docs/http/ngx_http_upstream_module.html>
+
+## 5a. RFC Editor: Routing, DNS Security, QUIC
+
+- RFC 4271 - BGP-4: <https://www.rfc-editor.org/info/rfc4271/>
+- RFC 4033 - DNS Security Introduction and Requirements: <https://www.rfc-editor.org/info/rfc4033/>
+- RFC 4034 - Resource Records for DNSSEC: <https://www.rfc-editor.org/info/rfc4034/>
+- RFC 4035 - DNSSEC Protocol Modifications: <https://www.rfc-editor.org/info/rfc4035/>
+- RFC 7858 - DNS over TLS: <https://www.rfc-editor.org/info/rfc7858/>
+- RFC 8484 - DNS Queries over HTTPS (DoH): <https://www.rfc-editor.org/info/rfc8484/>
+- RFC 9000 - QUIC: A UDP-Based Multiplexed and Secure Transport: <https://www.rfc-editor.org/info/rfc9000/>
+- RFC 9114 - HTTP/3: <https://www.rfc-editor.org/info/rfc9114/>
+- RFC 7540 - HTTP/2: <https://www.rfc-editor.org/info/rfc7540/>
 
 ## 5. RFC Editor
 

@@ -1,0 +1,4 @@
+name: ipv4
+description: Topic skill for IPv4 addressing, CIDR and private/public address semantics.
+metadata:
+  default_prompt: "Use $ipv4 to explain IPv4 addressing, subnetting, private ranges and address-related connectivity issues."

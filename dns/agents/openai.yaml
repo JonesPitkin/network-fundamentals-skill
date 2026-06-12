@@ -1,0 +1,4 @@
+name: dns
+description: Topic skill for DNS concepts, resolver flow and DNS troubleshooting.
+metadata:
+  default_prompt: "Use $dns to explain resolver behavior, DNS roles and diagnose name resolution failures."

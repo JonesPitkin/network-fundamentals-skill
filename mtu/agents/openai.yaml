@@ -1,0 +1,4 @@
+name: mtu
+description: Topic skill for MTU, MSS, PMTUD and fragmentation issues.
+metadata:
+  default_prompt: "Use $mtu to explain packet size constraints, PMTUD failures and tunnel or fragmentation issues."

@@ -1,0 +1,4 @@
+name: http2-http3
+description: Topic skill for HTTP/2, HTTP/3, QUIC and modern web transport behavior.
+metadata:
+  default_prompt: "Use $http2-http3 to explain modern HTTP versions, QUIC, multiplexing, latency tradeoffs and protocol fallback behavior."

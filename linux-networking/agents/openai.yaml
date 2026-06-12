@@ -1,0 +1,4 @@
+name: linux-networking
+description: Topic skill for Linux host networking, sockets, listeners, routes and service reachability.
+metadata:
+  default_prompt: "Use $linux-networking to explain Linux host networking, listener scope, routes, reachability and server-side diagnostics."

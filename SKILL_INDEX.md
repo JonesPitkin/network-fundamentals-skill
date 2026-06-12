@@ -1,0 +1,27 @@
+# Skill Index
+
+- [`network-fundamentals`](SKILL.md): repository entrypoint и главный роутер по сетевым темам.
+- [`osi-model`](osi-model/SKILL.md): диагностика по слоям и метод локализации неисправностей.
+- [`tcp-ip`](tcp-ip/SKILL.md): практический Internet protocol suite.
+- [`tcp-vs-udp`](tcp-vs-udp/SKILL.md): сравнение transport semantics, reliability и latency tradeoffs.
+- [`dns`](dns/SKILL.md): resolver path, authoritative flow и DNS troubleshooting.
+- [`ports`](ports/SKILL.md): transport ports, sockets, listening services и firewall interaction.
+- [`nat`](nat/SKILL.md): NAT, PAT, SNAT, DNAT и service publishing.
+- [`cgnat`](cgnat/SKILL.md): операторский NAT, inbound limits и VPN side effects.
+- [`mtu`](mtu/SKILL.md): MTU, MSS, PMTUD, fragmentation и tunnel behavior.
+- [`gateway`](gateway/SKILL.md): default gateway и next-hop logic.
+- [`routing`](routing/SKILL.md): route selection, static/dynamic routing и path debugging.
+- [`ipv4`](ipv4/SKILL.md): IPv4 addressing, CIDR, private/public ranges и broadcast behavior.
+- [`ipv6`](ipv6/SKILL.md): IPv6 addressing, NDP, SLAAC, ICMPv6 и PMTUD.
+- [`tls`](tls/SKILL.md): TLS, certificates, handshake, encryption, integrity и authentication.
+- [`https`](https/SKILL.md): HTTPS publication, redirects, HSTS, mixed content и secure web delivery.
+- [`cdn`](cdn/SKILL.md): CDN, edge caching, latency reduction, origin shielding и edge security.
+- [`reverse-proxy`](reverse-proxy/SKILL.md): reverse proxy, upstream routing, header passing и service publication.
+- [`firewall`](firewall/SKILL.md): filtering policy, OpenWrt firewall role, exposure control и traffic segmentation.
+- [`linux-networking`](linux-networking/SKILL.md): Linux interfaces, routes, neighbor state, sockets и host-side diagnostics.
+- [`anycast`](anycast/SKILL.md): anycast routing, nearest available edge selection, DNS edge behavior и Cloudflare delivery model.
+- [`bgp`](bgp/SKILL.md): BGP, autonomous systems, path selection и интернет-маршрутизация.
+- [`dns-security`](dns-security/SKILL.md): DNSSEC, DoH, DoT, DNS privacy и resolver security.
+- [`mtls`](mtls/SKILL.md): mutual TLS, client certificates и двусторонняя аутентификация.
+- [`http2-http3`](http2-http3/SKILL.md): HTTP/2, HTTP/3, QUIC, multiplexing и modern web transport behavior.
+- [`load-balancing`](load-balancing/SKILL.md): load balancing, failover, upstream distribution и availability design.

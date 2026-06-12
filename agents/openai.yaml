@@ -1,0 +1,4 @@
+name: network-fundamentals
+description: Repository entry skill for routing network fundamentals tasks to the correct topic module.
+metadata:
+  default_prompt: "Use $network-fundamentals as the main entrypoint for OSI, TCP/IP, DNS, routing, NAT, MTU, IPv4, IPv6 and transport diagnostics."

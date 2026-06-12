@@ -1,0 +1,4 @@
+name: bgp
+description: Topic skill for BGP, Internet routing and path selection between autonomous systems.
+metadata:
+  default_prompt: "Use $bgp to explain interdomain routing, AS-level path selection and why global reachability differs across providers or regions."

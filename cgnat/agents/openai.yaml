@@ -1,0 +1,4 @@
+name: cgnat
+description: Topic skill for Carrier-Grade NAT behavior, limitations and detection.
+metadata:
+  default_prompt: "Use $cgnat to explain operator NAT, missing public IPv4 and its impact on inbound connectivity or VPNs."

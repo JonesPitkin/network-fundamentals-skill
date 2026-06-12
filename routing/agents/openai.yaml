@@ -1,0 +1,4 @@
+name: routing
+description: Topic skill for routing tables, path selection and route troubleshooting.
+metadata:
+  default_prompt: "Use $routing to explain path selection, route lookup and static or dynamic routing behavior."

@@ -1,0 +1,4 @@
+name: osi-model
+description: Topic skill for OSI-based troubleshooting and layered network reasoning.
+metadata:
+  default_prompt: "Use $osi-model to break a network problem down by layers and distinguish link, IP, transport, DNS and application failures."

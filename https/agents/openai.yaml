@@ -1,0 +1,4 @@
+name: https
+description: Topic skill for HTTPS publication, redirects, HSTS and secure web delivery.
+metadata:
+  default_prompt: "Use $https to explain secure HTTP publication, mixed content, redirects and browser-facing HTTPS issues."

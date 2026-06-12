@@ -1,0 +1,4 @@
+name: tls
+description: Topic skill for TLS fundamentals, certificates, handshake and encrypted publication paths.
+metadata:
+  default_prompt: "Use $tls to explain handshake, certificates, encrypted transport and TLS-related failures around VPN panels, proxies and APIs."

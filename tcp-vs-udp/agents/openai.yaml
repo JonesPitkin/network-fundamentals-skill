@@ -1,0 +1,4 @@
+name: tcp-vs-udp
+description: Topic skill for comparing TCP and UDP behavior, tradeoffs and diagnostics.
+metadata:
+  default_prompt: "Use $tcp-vs-udp to compare TCP and UDP, explain transport tradeoffs and debug transport-specific failures."
